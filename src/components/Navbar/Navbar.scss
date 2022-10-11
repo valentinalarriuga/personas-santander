@@ -1,0 +1,13 @@
+@use '../../global/global.scss';
+
+.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid global.$light-gray;
+    height: 4rem;
+    
+    img {
+        width: 140px;
+    }
+}

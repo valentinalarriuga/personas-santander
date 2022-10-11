@@ -1,0 +1,75 @@
+@use './global/global.scss';
+
+.App {
+  position: relative;
+  min-height: 100vh;
+
+  nav {
+    z-index: 2;
+  }
+
+  h1 {
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+    z-index: 4;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .welcome-message {
+    display: none;
+  }
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.select-buttons {
+  width: 50vw;
+  max-width: 250px;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 0;
+  background-color: global.$light-gray;
+  border-bottom: 4px solid red;
+  font-weight: bold;
+}
+
+.select-buttons.disabled {
+  color: global.$dark-gray;
+  padding: 1rem 2rem;
+  border: 0;
+  background-color: global.$light-gray;
+  border-bottom: 4px solid transparent;
+  font-weight: bold;
+}
+
+@media (min-width: 500px) {
+  .side-bar {
+    background-color: white;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    border-left: 2px solid global.$light-gray;
+    z-index: 3;
+  }
+
+  .ilustration-image {
+    position: absolute;
+    bottom: 0;
+    height: 50rem;
+    z-index: 1;
+  }
+
+  .App {
+    .welcome-message {
+      display: flex;
+    }
+  }
+}

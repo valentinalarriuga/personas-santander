@@ -1,0 +1,25 @@
+@use '../../global/global.scss';
+
+.no-cliente {
+  max-width: calc(500px);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    padding: 2rem;
+    width: 300px;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    background-color: red;
+    border-radius: 2rem;
+  }
+}

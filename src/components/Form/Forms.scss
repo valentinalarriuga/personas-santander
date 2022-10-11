@@ -1,0 +1,92 @@
+@use '../../global/global.scss';
+
+form {
+  max-width: calc(500px - 8rem);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem;
+
+  h2 {
+    color: global.$text;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+
+    .pass-input {
+      position: relative;
+
+      .eye-icon {
+        position: absolute;
+        right: 1rem;
+        top: 35%;
+        cursor: pointer;
+      }
+
+      .eye-icon.disabled {
+        display: none;
+      }
+
+      .eye-icon.open {
+        color: red;
+      }
+    }
+
+    input {
+      border: 0;
+      border-bottom: 2px solid global.$middle-gray;
+      padding: 1rem;
+      padding-right: 2rem;
+      width: calc(100% - 3rem);
+      margin-bottom: 1rem;
+    }
+    
+    input:focus {
+      outline: none;
+      border-bottom: 2px solid global.$dark-gray;
+    }
+  }
+
+  .security-text {
+    background-color: global.$light-gray;
+    padding: 2rem 3rem;
+    margin: 2rem 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+
+    .text-icon {
+      position: absolute;
+      left: 1rem;
+      top: 2.35rem;
+      color: global.$light-blue;
+    }
+
+    p {
+      margin: 0;
+
+      a {
+        color: global.$light-blue;
+        text-decoration: none;
+      }
+    }
+  }
+
+  button {
+    color: white;
+    background-color: global.$dark-gray;
+    border: 0;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    align-self: center;
+  }
+
+  button.active {
+    background-color: red;
+    cursor: pointer;
+  }
+}

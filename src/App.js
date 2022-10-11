@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Forms from "./components/Form/Form";
+import Navbar from "./components/Navbar/Navbar";
+import BannerNoCliente from "./components/BannerNoCliente/BannerNoCliente";
+import ilustration from "./images/Ilustracion.svg";
+
+import "./App.scss";
 
 function App() {
+  const [activeButton, setActiveButton] = useState("soy");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="welcome-message">
+        <h1>
+          <span>!Hola¡</span> Te damos la bienvenida
+        </h1>
+        <img className="ilustration-image" src={ilustration} />
+      </div>
+      <div className="side-bar">
+        <div className="nav-buttons">
+          <button
+            onClick={() => setActiveButton("soy")}
+            className={
+              activeButton === "soy"
+                ? "select-buttons"
+                : "select-buttons disabled"
+            }
+          >
+            Soy cliente
+          </button>
+          <button
+            onClick={() => setActiveButton("noSoy")}
+            className={
+              activeButton === "noSoy"
+                ? "select-buttons"
+                : "select-buttons disabled"
+            }
+          >
+            No soy cliente
+          </button>
+        </div>
+        {activeButton === "soy" ? <Forms /> : <BannerNoCliente />}
+      </div>
     </div>
   );
 }
