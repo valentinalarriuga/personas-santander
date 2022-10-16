@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/personas-santander/static/css/main.974d7229.css",
-    "main.js": "/personas-santander/static/js/main.2cbcf06f.js",
+    "main.css": "/personas-santander/static/css/main.b34fb085.css",
+    "main.js": "/personas-santander/static/js/main.bf517d2c.js",
     "static/media/nocliente.png": "/personas-santander/static/media/nocliente.85221d2ce0ad0b5ad8c4.png",
     "static/media/Ilustracion.svg": "/personas-santander/static/media/Ilustracion.770c79683a72abe8953aeb1efff98f5e.svg",
     "static/media/santander.svg": "/personas-santander/static/media/santander.571f1c5342bfba32706def35294e8a8f.svg",
     "index.html": "/personas-santander/index.html",
-    "main.974d7229.css.map": "/personas-santander/static/css/main.974d7229.css.map",
-    "main.2cbcf06f.js.map": "/personas-santander/static/js/main.2cbcf06f.js.map"
+    "main.b34fb085.css.map": "/personas-santander/static/css/main.b34fb085.css.map",
+    "main.bf517d2c.js.map": "/personas-santander/static/js/main.bf517d2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.974d7229.css",
-    "static/js/main.2cbcf06f.js"
+    "static/css/main.b34fb085.css",
+    "static/js/main.bf517d2c.js"
   ]
 }
