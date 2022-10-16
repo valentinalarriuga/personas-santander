@@ -127,6 +127,15 @@ const Forms = () => {
             className={eyeClicked.user ? "eye-icon open" : "eye-icon disabled"}
           />
         </div>
+
+        <button
+          type="submit"
+          disabled={disabledButtons}
+          className={disabledButtons ? "" : "active"}
+          href="https://www2.personas.santander.com.ar/obp-webapp/angular/#!/login"
+        >
+          Ingresar
+        </button>
       </div>
 
       <div className="security-text">
@@ -139,17 +148,6 @@ const Forms = () => {
           </a>
         </p>
       </div>
-
-      {/* https://www2.personas.santander.com.ar/obp-webapp/angular/#!/login */}
-
-      <button
-        type="submit"
-        disabled={disabledButtons}
-        className={disabledButtons ? "" : "active"}
-        href="https://www2.personas.santander.com.ar/obp-webapp/angular/#!/login"
-      >
-        Ingresar
-      </button>
     </form>
   );
 };
